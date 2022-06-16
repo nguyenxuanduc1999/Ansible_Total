@@ -1,0 +1,17 @@
+---
+# - hosts: Jenkins
+#   become: yes
+#   roles:
+#     - Jenkins
+
+# - hosts: BE-php
+#   become: yes
+#   roles:
+#     - php
+#     - mysql
+#     - nginx
+- hosts: FE-nodejs
+  become: yes
+  roles:
+#     - nginx
+    - nodejs
